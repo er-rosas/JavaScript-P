@@ -11,3 +11,11 @@
 let nombre = prompt("escribe tu nombre");
 let saludo = "Hola "+nombre;
 console.log(saludo);
+
+
+
+// Solicitar al usuario que escriba su nombre usando prompt
+var nombreUsuario = prompt("Escribe tu nombre");
+
+// Saludar al usuario con un mensaje que incluya su nombre
+alert("Hola " + nombreUsuario + ".");

@@ -316,8 +316,12 @@ console.log(`Luego del cambio varUno es ${varUno} y varDos es ${varDos}`)
 
 // ¿Es par? : true
 
-let numeroPARoIMPAR = parseInt(prompt("Escribe un numero"))
+let numeroPARoIMPAR = parseInt(prompt("Escribe un numero entero"))
 
+let res = numeroPARoIMPAR % 2;
+console.log(res)
+let par = res == 0;
 
+console.log("¿Es par? " + par);
 
 

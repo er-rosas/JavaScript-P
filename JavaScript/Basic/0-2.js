@@ -33,6 +33,27 @@ if (num02 >= 0) {
 }
 
 //0-3
+
+
+// En este ejercicio debes pedri dos números enteros y devolver el cociente de dividir el primero entre el segundo, pero si este es cero no debe hacer la división, sino lanzar un mensaje de error
+
+// Si se entran el número 8 y 2, debe resultar 4
+
+// Si se entran 4 y 0, dbe resultar en un mensaje de error.
+
+let dividendo03 = parseInt(prompt("Ingrese el primer numero"))
+let divisor03 = parseInt(prompt("Ingrese el segundo numero"))
+
+let cociente
+
+if (divisor03 != 0) {
+    cociente = dividendo03 / divisor03
+    console.log(`El resultado de dividir ${dividendo03} entre ${divisor03} es = ${cociente}`)
+} else {
+    console.log(`Error al dividir entre 0`)
+}
+
+
 //0-4
 //0-5
 //0-6

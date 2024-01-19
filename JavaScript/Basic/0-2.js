@@ -91,6 +91,21 @@ console.log(`La diferencia entre ${num05_01} y ${num05_02} es ${diferencia05}`)
 
 
 //0-6
+
+// Este ejercicio dirigirá a los clientes a la barra de bebidas o a la de comidas, para ello el cliente puede pedir vino, cerveza, refresco, agua. Si pide un cerveza o vino se le dirige a la barra y si no pues se le dirige a la tienda.
+
+// Un cliente ellige vino, aparecerá el mensaje vaya a la barra, en caso contrarío dirá que vaya a la tienda.
+
+let dirigirCliente = prompt("Por favor elija una bebida vino, cerveza, refresco, agua.")
+let dirCliMinusculas = dirigirCliente.toLocaleLowerCase()
+
+if (dirCliMinusculas === "vino" || dirCliMinusculas === "cerveza") {
+    console.log("Diríjase a la barra de bebidas")
+} else {
+    console.log("Diríjase a la tienda")
+}
+
+
 //0-7
 //0-8
 //0-9

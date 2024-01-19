@@ -55,6 +55,22 @@ if (divisor03 != 0) {
 
 
 //0-4
+
+
+// Este script pide al usuario que teclee una letra entre A, B, C, D. Si pulsa la letra A en mayúsucla o en minúscula le dará el mensaje de que ha acertado, en caso contrario le dirá que se equivocó...
+
+// Si pulsa C le dará mensaj de error.
+
+let letra = prompt("Ingrese una de estas letras A - B - C - D")
+let textoEnMiusculas = letra.toLocaleLowerCase()
+
+if (textoEnMiusculas = a) {
+    console.log("Haz acertado la letra")
+} else {
+    console.log("Te equivocaste de letra")
+}
+
+
 //0-5
 //0-6
 //0-7

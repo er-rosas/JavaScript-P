@@ -72,6 +72,24 @@ if (textoEnMiusculas = a) {
 
 
 //0-5
+
+// En este ejemplo el usuario entrará dos números. Debe devvolver la diferencia entre el mayor y el menor
+
+// Si el usuario entre el 5 y el 8, el programa devolverá 3 (8 - 5)
+
+let num05_01 = parseInt(prompt("Ingrese el primer numero"))
+let num05_02 = parseInt(prompt("Ingrese el segundo numero"))
+
+let diferencia05
+if (num05_01 < num05_02) {
+    diferencia05 = num05_02 - num05_01
+} else {
+    diferencia05 = num05_01 - num05_02
+}
+
+console.log(`La diferencia entre ${num05_01} y ${num05_02} es ${diferencia05}`)
+
+
 //0-6
 //0-7
 //0-8

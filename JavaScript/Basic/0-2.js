@@ -120,6 +120,23 @@ if (viajarMinusculas === "tren" || viajarMinusculas === "autobús") {
 } else {
     console.log(`Muy bien que tenga un lindo viaje en ${viajar06}`)
 }
+
 //0-8
+
+// En un tramo de un rally los conductores no deben ir ni demasiado rápido ni demasiado lentos. Este ejercicio debe tomar la longitud del tramo en kilometros y el tiempo empleado, si la velocidad está entre 40 y 60 km/h el conductor pasa la prueba en caso contrario es descalificado.
+
+// Ejemplo si recorre 100 km en 4 horas, ha ido a una velocidad de 100/4 que son 25km/h. Estaría descalificado.
+
+let kilometros08 = parseInt(prompt("Cantidad de kilometros recorridos"))
+let horas08 = parseInt(prompt("Cantidad de horas hechas en el total del recorrido"))
+let velocidad08 = kilometros08 / horas08
+
+if (velocidad08 >= 40 && velocidad08 <= 60) {
+    console.log("Ha pasado la prueba correctamente")
+} else {
+    console.log("Usted ha sido descalificado por no promediar la velocidad estipulada")
+}
+
+
 //0-9
 //1-0

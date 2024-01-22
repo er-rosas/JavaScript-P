@@ -107,6 +107,19 @@ if (dirCliMinusculas === "vino" || dirCliMinusculas === "cerveza") {
 
 
 //0-7
+
+// Este programa te ayuda a viajar. El programa pide al usuario si va a viajar con coche, tren, bicicleta o autobús. Si va en tren o autobus le recordará que lleve dinero para el billete.
+
+// El cliente pide ir en tren, aparecerá el mesnaje "lleva dinero para el ticket"
+
+let viajar06 = prompt("En que medio de transporte viajara coche, tren, bicicleta o autobús")
+let viajarMinusculas = viajar06.toLocaleLowerCase()
+
+if (viajarMinusculas === "tren" || viajarMinusculas === "autobús") {
+    console.log(`Lleve dinero para el billete de ${viajar06}`)
+} else {
+    console.log(`Muy bien que tenga un lindo viaje en ${viajar06}`)
+}
 //0-8
 //0-9
 //1-0

@@ -180,3 +180,31 @@ if (promedio10 < 5){
     }
 }
 console.log("Calificación promedio: " + calificacion10)
+
+
+
+// 1-1
+
+// El usuario debe introducir dos valores numéricos por teclado y la aplicación deberá indicar cual es el mayor, el primero o el segundo.
+
+// La idea es usar las sentencias if reducidas (cond ? ture:false)
+
+// Si el usuario entra 2 y luego 4, debe decir que el mayor es el segundo número.
+
+let num1_11 = parseInt(prompt("Ingrese el primer número"))
+let num2_11 = parseInt(prompt("Ingrese el segundo número"))
+
+let mensaje_11 = (num1_11 > num2_11) ? `${num1_11} es mas grande que ${num2_11}` : `${num2_11} es mas grande que ${num1_11}`
+
+console.log(mensaje_11)
+
+// 1-2
+
+// 1-3
+// 1-4
+// 1-5
+// 1-6
+// 1-7
+// 1-8
+// 1-9
+// 2-0

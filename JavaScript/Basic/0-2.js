@@ -150,11 +150,33 @@ let precioA09 = parseInt(prompt("Precio de artuculo"))
 let descuento09 = precioA09 * articulos09
 let total09
 
-if (descuento09 >= 40 ) {
+if (articulos09 > 10 && precioA09 > 40) {
     total09 = descuento09 - descuento09*0.15
-    console.log(`La compra = $${descuento09} supera los $40, aplicamos descuento de 15 % y el total a pagar es $${total09}`)
+    console.log(`La compra = $${descuento09} supera los $400, aplicamos descuento de 15 % y el total a pagar es $${total09}`)
 } else {
     console.log(`La compra = $${descuento09} no supera los $40,el total a pagar es $${descuento09}`)
 }
 
 //1-0
+
+// Crea un programa que pida la nota de un estudiante en los tres trimestres del curso y calcule la nota promedio. El resultado que dará será suspenso si la media es menor de 5, aprobado si está entre 5 y 7 y  Notable por encima de 7.
+
+// Para las notas 6, 8, 10 la media es 8 por tanto se califica como Notable
+
+let notaMes1_10 = parseInt(prompt("Nota del mes 1"));
+let notaMes2_10 = parseInt(prompt("Nota del mes 2"));
+let notaMes3_10 = parseInt(prompt("Nota del mes 3"));
+
+let promedio10 = (notaMes1_10 + notaMes2_10 + notaMes3_10) / 3;
+let calificacion10
+
+if (promedio10 < 5){
+    calificacion10 = "Desaprobado"
+}else{
+    if(promedio10 >= 5 && promedio10 <= 7){
+        calificacion10 = "Aprobado"
+    }else{
+        calificacion10 = "Notable"
+    }
+}
+console.log("Calificación promedio: " + calificacion10)

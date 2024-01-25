@@ -200,6 +200,21 @@ console.log(mensaje_11)
 
 // 1-2
 
+// El usuario debe entrar un número y su cuadrado. Si es correcto el script enviará un mensja ede acierto en caso contrario dirá que se produjo un error.
+
+// Se trata de usar el if resumido (cond?true:false)
+
+// Por ejemplo si teclea 3 y 9 el resutlado es Correcto. Si tecleo 3 8, el resultado será Error
+
+let num1_12 = parseInt(prompt("Ingrese un número"))
+let num2_12 = parseInt(prompt("Ingrese el cuadrado de el número anterior"))
+
+let cuadrado_12 = num1_12 * num1_12
+let resultado_12 = (num2_12 == cuadrado_12) ? "Correcto" : "Incorrecto"
+
+console.log(resultado_12)
+
+
 // 1-3
 // 1-4
 // 1-5

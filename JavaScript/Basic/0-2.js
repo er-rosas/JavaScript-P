@@ -139,4 +139,22 @@ if (velocidad08 >= 40 && velocidad08 <= 60) {
 
 
 //0-9
+
+// Una tienda aplica un descuento del 15% para las compras que incluyan más de 10 artículos iguales cuyo precio sea superior a 40 euros. Tu programa debe comprobar y calcular la cantidad a pagar sabiendo el número de artículos y el precio de cada uno.
+
+// Por ejemplo si compras 20 artículos de 10 euros se te descuenta un 15% del total pagarías 20*10 - 20*10*0.15 = 170 eruos.
+
+let articulos09 = parseInt(prompt("Cantidad de artículos a comprar"))
+let precioA09 = parseInt(prompt("Precio de artuculo"))
+
+let descuento09 = precioA09 * articulos09
+let total09
+
+if (descuento09 >= 40 ) {
+    total09 = descuento09 - descuento09*0.15
+    console.log(`La compra = $${descuento09} supera los $40, aplicamos descuento de 15 % y el total a pagar es $${total09}`)
+} else {
+    console.log(`La compra = $${descuento09} no supera los $40,el total a pagar es $${descuento09}`)
+}
+
 //1-0

@@ -229,6 +229,32 @@ let mensaje_13 = (edad_13 >= 18 ) ? "Usted puede entrar" : `Usted debe esperar $
 console.log(mensaje_13)
 
 // 1-4
+
+// En un restaurante los clientes pueden pedir menú de carne, pescado o verdura. Si pide carne se le ofrecerá como bebida vino tinto, si pide pescado se le ofrecerá vino blanco y si pide verdura se le ofrecerá agua
+
+// Si no elije el menú de la lista aparecerá la frase elija carne, pescado o verdura.
+
+// Por ejemplo he pedido carne, el ejercicio mostrará "¿Desea beber vino tinto?"
+
+let menu_13 = prompt("Por favor elija menú de carne, pescado o verdura.")
+let bebida_13
+
+switch (menu_13.toLocaleLowerCase()){
+    case 'carne':
+        bebida_13 = "¿Desea beber vino tinto?";
+        break;
+    case 'pescado':
+        bebida_13 = "¿Desea beber vino blanco?";
+        break;
+    case 'verdura':
+        bebida_13 = "¿Desea agua?";
+        break;
+    default:
+        bebida_13 = "Elija carne pescado o verdura";
+    }
+console.log(bebida_13);
+
+
 // 1-5
 // 1-6
 // 1-7

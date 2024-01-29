@@ -281,6 +281,43 @@ console.log(sala_15);
 
 
 // 1-6
+
+// Aprtir de un número de mes tecleado por un usuario el programa debe indicar la estación del año.
+
+// Las estaciones serán 12,1,2: Invierno. 3,4,5 primavera, 6,7,8 verano y 9,10,11 otoño.
+
+// Si tecleo el 3 el script me responderá que estamos en Primavera
+
+let mes_16 = parseInt(prompt("Escriba el mes del año en número"))
+let season
+
+switch (mes_16) {
+    case 12:
+    case 1:
+    case 2:
+        season = "Es Verano"
+        break;
+    case 3:
+    case 4:
+    case 5:
+        season = "Es Otoño"
+        break;
+    case 6:
+    case 7:
+    case 8:
+        season = "Es Invierno"
+        break;
+    case 9:
+    case 10:
+    case 11:
+        season = "Es Primavera"
+        break;
+    default:
+        season = "No es un mes valido"
+        break;
+}
+console.log(season)
+
 // 1-7
 // 1-8
 // 1-9

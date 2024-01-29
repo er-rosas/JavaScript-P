@@ -256,6 +256,33 @@ console.log(bebida_13);
 
 
 // 1-5
+
+// En una sala de juegos existen tre salas: Consolas, Juegos 2D, Juegos 3D, Realidad Virtual. Si un usuario paga  4 créditos puede acceder a todas, si paga 3 solo podrá acceder a las tres primeras, si paga 2 a las dos primeras y si paga 1 solo a la primera sala.
+
+// Tecleo que pago 2 créditos, el escript me dirá que puedo acceder a las salas de consola y juegos 2D.
+
+let sala_15 = 'Salas: '
+let creditos_15 = parseInt(prompt("Cuantos creditos desea compar"))
+
+switch (creditos_15){
+    case 4:
+        sala_15 += "Realidad Virtual, ";
+        break;
+    case 3:
+        sala_15 += "Juegos 3D, ";
+        break;
+    case 2:
+        sala_15 += "Juegos 2D, ";
+        break;
+    case 1:
+    sala_15 += "Consolas, ";
+    break;
+    default:
+        sala_15 += "Ninguna";
+    }
+console.log(sala_15);
+
+
 // 1-6
 // 1-7
 // 1-8

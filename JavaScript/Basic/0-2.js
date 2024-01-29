@@ -319,6 +319,30 @@ switch (mes_16) {
 console.log(season)
 
 // 1-7
+
+// En este ejercicio el usuario entra la longitud de la base y el alto de un cuadrado. Si la base y el alto son idénticos la respuesta será "Es un cuadrado", si la base es mayor que el alto dira "Rectángulo horizontal" y en caso contrario dirá "Rectángulo vertical".
+// Si entro base es 10, alto es 5. Resultado rectángulo
+
+let base_17 = parseInt(prompt("Ingrese la longitud de la base del cuadrado"))
+let alto_17 = parseInt(prompt("Ingrese la altura del cuadrado"))
+let cuadrado
+
+switch (true) {
+    case base_17 === alto_17:
+        cuadrado = "Es un cuadrado"
+        break;
+    case base_17 > alto_17:
+        cuadrado = "Rectángulo horizontal"
+        break;
+    case base_17 < alto_17:
+        cuadrado = "Rectángulo vertical"
+        break;
+    default:
+        cuadrado = "Ingrese un número valido"
+        break;
+}
+console.log(cuadrado)
+
 // 1-8
 // 1-9
 // 2-0

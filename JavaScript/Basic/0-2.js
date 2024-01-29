@@ -344,5 +344,28 @@ switch (true) {
 console.log(cuadrado)
 
 // 1-8
+
+// En una tienda coches se quiere redirigir a un cliente hacia una sección de acuerdo al tipo de coche que elija. Si elige tipo gasolina o 1 se le enviará a la oficina numero 100. Si elije el tipo diesel o 2 irá a la oficina 200 y si elige eléctrico o 3 se le enviará a la oficina 300.
+// Por ejemplo tecleo el número 2, el mesnaje me dirá que vaya a la oficina 200
+
+let gasolina_18 = prompt("Ingrese el tipo de gasolina del auto que desea")
+let cliente_18 = "Dirijase a la oficina "
+
+switch (gasolina_18) {
+    case "o1":
+        cliente_18 += "100"
+        break;
+    case "o2":
+        cliente_18 += "200"
+        break;
+    case "o3":
+        cliente_18 += "300"
+        break;
+    default:
+        cliente_18 = "Ingrese un tipo de gasolina válido o1, o2, o3"
+        break;
+}
+console.log(cliente_18)
+
 // 1-9
 // 2-0

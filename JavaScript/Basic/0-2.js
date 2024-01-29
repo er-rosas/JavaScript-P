@@ -267,13 +267,10 @@ let creditos_15 = parseInt(prompt("Cuantos creditos desea compar"))
 switch (creditos_15){
     case 4:
         sala_15 += "Realidad Virtual, ";
-        break;
     case 3:
         sala_15 += "Juegos 3D, ";
-        break;
     case 2:
         sala_15 += "Juegos 2D, ";
-        break;
     case 1:
     sala_15 += "Consolas, ";
     break;

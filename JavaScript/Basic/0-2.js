@@ -368,4 +368,39 @@ switch (gasolina_18) {
 console.log(cliente_18)
 
 // 1-9
+
+// Un comerciante hace descuentos a sus clientes de la siguiente forma:
+// Si ha comprado menos de 100 euros no hay descuento
+// Si la compra está entre 100 y 300 euros le descuenta un 5%
+// Si la compra está por encima de 300 hasta 500 euros le descuenta un 10%
+// Si la compra supera los 400 euros le descuenta un 15%
+
+// Es decir: hago una compra de 150 euros pago 150 - 5% de 150, o sea 142,5 euros.
+
+let compra_19 = parseInt(prompt("Ingrese el total de su compra"))
+let descuento_19
+let mensaje_19
+
+switch (true) {
+    case compra_19 < 100:
+        mensaje_19 = "La compra es de menos de 100 no hay descuento"
+        break;
+    case compra_19 < 300:
+        mensaje_19 = "La compra está entre 100 y 300 hay un descuento de 5%"
+        descuento_19 = compra_19 - (compra_19*0.05)
+        break;
+    case compra_19 < 500:
+        mensaje_19 = "La compra está entre 300 y 500 hay un descuento de 10%"
+        descuento_19 = compra_19 - (compra_19*0.1)
+        break;
+    case compra_19 > 500:
+        mensaje_19 = "La compra supera los 500 hay un descuento del 15%"
+        descuento_19 = compra_19 - (compra_19*0.15)
+        break;
+    default:
+        break;
+}
+
+console.log(mensaje_19 + " El total a pagar es de " + descuento_19)
+
 // 2-0

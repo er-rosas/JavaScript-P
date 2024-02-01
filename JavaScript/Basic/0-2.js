@@ -404,3 +404,29 @@ switch (true) {
 console.log(mensaje_19 + " El total a pagar es de " + descuento_19)
 
 // 2-0
+
+// En este ejercicio el script convertirá las notas numéricas de un examen en paabras: 0 - 4 suspenso, 5-6 aprobado, 7-8 notable, 9-10 sobresaliente.
+// Si tecleo 8 me dirá "Tu calificación es  notable"
+
+let nota_20 = parseInt(prompt("Ingrese la nota del estudiante"))
+let calificacion_20
+
+switch (true) {
+    case (nota_20 >= 0 && nota_20 <= 4):
+        calificacion_20 = "suspenso"
+        break;
+    case (nota_20 <= 6):
+        calificacion_20 = "aprobado"
+        break;
+    case (nota_20 <= 8):
+        calificacion_20 = "notable"
+        break;
+    case (nota_20 <= 10):
+        calificacion_20 = "sobresaliente"
+        break;
+    default:
+        calificacion_20 = "valor incorrecto"
+        break;
+}
+
+console.log("Tu calificacion es " + calificacion_20)

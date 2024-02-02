@@ -35,18 +35,40 @@ console.log(msg_02);
 // Se quiere un bucle que genere una lista con todos los números pares positivos por debajo del número tecleado por el usuario. Los números se aparecerán en una ventana alert con cambios de linea (carácter '\n').
 // Si tecleo el número el número 9 deberá mostrar cinco lineas con los números 0 2 4 6 8
 
-let contar
-let max = parseInt(prompt("Teclear un número entero"));
-let par = 0
-let msg = '';
-for(contar = 1;  par < max;  contar ++){
-    msg += par + "\n";
-    par = contar*2;
+let contar_03
+let max_03 = parseInt(prompt("Teclear un número entero"));
+let par_03 = 0
+let msg_03 = '';
+for(contar_03 = 1;  par_03 < max_03;  contar_03 ++){
+    msg_03 += par_03 + "\n";
+    par_03 = contar_03*2;
 }
-console.log(msg);
+console.log(msg_03);
 
 
 // 0-4
+
+// Este script debe escribir la tabla de multiplicar del número que el usuario teclee. La tabla mostrará en diferentes líneas cada producto y el resultado en la forma a x b = ab.
+
+// Recuerda que el salto de linea es el carácter "\n"
+
+// Si el usuario teclea el 4 la tabla mostrará diez líneas en la forma
+
+// 4 x 1 = 4
+
+// 4 x 2 = 8...
+
+let contar_04
+let tabla_04 = parseInt(prompt("Escribir un numero entero"))
+let msg_04 = '';
+
+for (contar_04 = 0; contar_04 < 11; contar_04++) {
+    resilt_04 = tabla_04 * contar_04
+    msg_04 += tabla_04 + " * " + contar_04 + " = " + resilt_04 + "\n";
+}
+
+console.log(msg_04)
+
 // 0-5
 // 0-6
 // 0-7

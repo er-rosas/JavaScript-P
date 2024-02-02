@@ -31,6 +31,21 @@ msg_02 += contar_02;
 console.log(msg_02);
 
 // 0-3
+
+// Se quiere un bucle que genere una lista con todos los números pares positivos por debajo del número tecleado por el usuario. Los números se aparecerán en una ventana alert con cambios de linea (carácter '\n').
+// Si tecleo el número el número 9 deberá mostrar cinco lineas con los números 0 2 4 6 8
+
+let contar
+let max = parseInt(prompt("Teclear un número entero"));
+let par = 0
+let msg = '';
+for(contar = 1;  par < max;  contar ++){
+    msg += par + "\n";
+    par = contar*2;
+}
+console.log(msg);
+
+
 // 0-4
 // 0-5
 // 0-6

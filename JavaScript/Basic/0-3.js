@@ -99,6 +99,19 @@ console.log(divEnTRES_05);
 // }
 
 // 0-6
+
+// Este script el usuario deberá teclear una letra y un número, y el programa mostrará una cadena formada por la letra repetida el número que haya tecleado.
+// Si el usuario teclea x y 5 el script mostrará xxxxx. O sea una cadena de 5 letras x
+
+let letra_06 = prompt("Ingresar una letra.")
+let num_06 = parseInt(prompt("Ingrese un número"))
+let cadena_06 = '';
+
+for (index = 0; index < num_06; index++) {
+    cadena_06 += letra_06 + ", "
+}
+console.log(cadena_06);
+
 // 0-7
 // 0-8
 // 0-9

@@ -70,6 +70,34 @@ for (contar_04 = 0; contar_04 < 11; contar_04++) {
 console.log(msg_04)
 
 // 0-5
+
+// En este ejercicio mezclamos bucles con condicionales: el usuario escribe un número y el script imprimirá (console.log) todos los números menores que al dividirlos por 3 den como resto 2.
+
+// Recuerda: un número es múltiplo de N cuando el dividirlo por N el resto es 0.
+
+// Por ejemplo si tecleas el 14, obtendré la lista 2, 5, 8 y 11
+
+let numero_05 = parseInt(prompt("Escriba un numero entero"))
+let divEnTRES_05 = '';
+let resto_03
+
+for (numero_05 = 0; numero_05 > 0; numero_05--) {
+    resto_03 = numero_05 % 3
+    // console.log(resto_03);
+    if (resto_03 === 2) {
+        divEnTRES_05 += numero_05 + ", "
+    }
+}
+console.log(divEnTRES_05);
+
+// let contar_05
+// for (contar_05 = 0; contar_05 < numero_05; contar_05++)
+// {
+//     if( contar_05 % 3 == 2){
+//         console.log(contar_05);
+//     }
+// }
+
 // 0-6
 // 0-7
 // 0-8

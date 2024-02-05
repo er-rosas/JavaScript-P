@@ -113,6 +113,33 @@ for (index = 0; index < num_06; index++) {
 console.log(cadena_06);
 
 // 0-7
+
+// Se quiere tener un contador de dos dígitos en base 5. El funcionamiento es simple: el dígito de la derecha irá aumentando y cuando pase de 4 su valor se pondrá a 0 y el dígito de la izquierda se incrementa en 1. El contador debe deternerse cuando alcancemos el valor 1:4
+// Usamos el console log para ir imprimiendo los valores de los dígitos, deberá quedar algo así:
+
+// 0:0
+// 0:1
+// 0:2
+// ...
+// ...
+// 1:4 será el final del conteo
+
+// let letra_07
+// let num_07
+// let cadena_07 = '';
+// cadena_06 += letra_06 + ", "
+
+let count_07
+let hora_07 = 0
+for (count_07 = 0; count_07 < 5; count_07++) {
+    if (count_07 === 4 && hora_07 < 2) {
+        count_07 = 0
+        hora_07 = 1
+    }
+    console.log(hora_07+":"+count_07)
+}
+console.log(cadena_06);
+
 // 0-8
 // 0-9
 // 1-0

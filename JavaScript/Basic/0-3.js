@@ -150,5 +150,30 @@ for(izq = 0; izq < 2; izq++){
 }
 
 // 0-8
+
+// Se trata de dibujar un triángulo rectángulo con asteriscos. El usuario tecleará un valor entero, el programa escribirá con asteriscos tantas lineas como diga ese número. Cada linea estará formada por una serie de astericos tan larga como diga el número de línea en el que está.
+
+// Para separar una linea de la siguiente en console o en alert debes usar "\n". En este ejercicio usa console.log.
+
+// Le tecleamos el valor 5. El resultado será:
+
+// *
+// **
+// ***
+// ****
+// *****
+
+let num_08 = parseInt(prompt("Ingrese un número"))
+let num2_08
+
+for (let index2 = 0; index2 < num_08; index2++) {
+    let asterisc_08 = ""
+    for (let index3 = 0; index3 <= index2; index3++) {
+        asterisc_08 += "*"
+    }
+    console.log(asterisc_08 + "\n");
+}
+
+
 // 0-9
 // 1-0

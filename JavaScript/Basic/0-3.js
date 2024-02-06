@@ -129,16 +129,25 @@ console.log(cadena_06);
 // let cadena_07 = '';
 // cadena_06 += letra_06 + ", "
 
+// Mimanera
 let count_07
 let hora_07 = 0
 for (count_07 = 0; count_07 < 5; count_07++) {
-    if (count_07 === 4 && hora_07 < 2) {
+    if (count_07 == 4 && hora_07 !== 1) {
         count_07 = 0
-        hora_07 = 1
+        hora_07 += 1
+        console.log("0:4")
     }
     console.log(hora_07+":"+count_07)
 }
-console.log(cadena_06);
+
+// Manera correcta
+let izq, der;
+for(izq = 0; izq < 2; izq++){
+    for(der=0; der < 5; der++){
+        console.log(izq+" : "+der)
+    }
+}
 
 // 0-8
 // 0-9

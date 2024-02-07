@@ -176,4 +176,16 @@ for (let index2 = 0; index2 < num_08; index2++) {
 
 
 // 0-9
+
+// Se trata de crear una aplicación que calcule la suma de todos los números enteros positivos entre 0 y el número tecleado por el usuario. El resultado será de la fomra "Los números enteros de 0 a n  suman suma"
+// Si tecleo el 5 obtendré "Los enteros enteros de 0 a n suman 15" (1+2+3+4+5 ).
+
+let num_09 = parseInt(prompt("Ingrese un numero entero"))
+let suma_09 = 0
+
+
+for (let index_09 = 0; index_09 <= num_09; index_09++) {
+    suma_09 += index_09
+}
+console.log("Los enteros enteros de 0 a " + num_09 + " suman " + suma_09)
 // 1-0

@@ -189,3 +189,19 @@ for (let index_09 = 0; index_09 <= num_09; index_09++) {
 }
 console.log("Los enteros enteros de 0 a " + num_09 + " suman " + suma_09)
 // 1-0
+
+// Programa un script que pida al usuario que teclee 4 números (uno cada vez). Con esos números el programa deberá calcular la media aritmética. O sea la suma de los 4 números dividida entre 4
+// El progrma pide 4 veces al usuario que telcee un número y este escribe 5,9,10,12. El programa dirá "La media es 9"
+
+let num_10
+let max_10 = 4
+let suma_10 = 0
+let promedio_10
+
+
+for (let index_10 = 0; index_10 < max_10; index_10++) {
+    num_10 = parseInt(prompt("Ingrese un numero entero"))
+    suma_10 += num_10
+}
+promedio_10 = suma_10 / 4
+console.log("La media es " + promedio_10)

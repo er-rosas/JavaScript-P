@@ -205,3 +205,29 @@ for (let index_10 = 0; index_10 < max_10; index_10++) {
 }
 promedio_10 = suma_10 / 4
 console.log("La media es " + promedio_10)
+
+// 1-1
+
+// Usando un bucle while escribir un script que pida un valor entero y cree una lista con los números desde el 0 al valor tecleado. Luego deberá sacar esa lista con un alert. Los números se separarán por comas.  
+// Si le doy el número 5 pues deberá contar 0,1,2,3,4,5
+
+let num_11 = parseInt(prompt("Ingrese un numero entero"))
+let contar_11 = 0;
+lista_11 ='';
+
+while (contar_11 < num_11) {
+    lista_11 += contar_11 + ', ';
+    contar_11++;
+}
+lista_11 += contar_11;
+console.log(lista_11);
+
+// 1-2
+// 1-3
+// 1-4
+// 1-5
+// 1-6
+// 1-7
+// 1-8
+// 1-9
+// 2-0

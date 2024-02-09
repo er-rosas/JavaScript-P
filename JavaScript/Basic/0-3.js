@@ -223,6 +223,15 @@ lista_11 += contar_11;
 console.log(lista_11);
 
 // 1-2
+
+// Se trata de pedir al usuario que teclee un número entre 1 y 5, si escribe alguno que esté fuera de ese rango deberá volver a pedir el número
+// Si tecleo 0 me dirá Por favor teclee un número entre 1 y 5.
+
+let num_12 = 0
+
+while (num_12 < 1 || num_12 > 5) {
+    num_12 = parseInt(prompt("Ingrese un numero entre el 1 y el 5."))
+}
 // 1-3
 // 1-4
 // 1-5

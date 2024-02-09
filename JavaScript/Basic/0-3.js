@@ -232,7 +232,20 @@ let num_12 = 0
 while (num_12 < 1 || num_12 > 5) {
     num_12 = parseInt(prompt("Ingrese un numero entre el 1 y el 5."))
 }
+
 // 1-3
+
+// Un script que preguntará al usuario si desea continuar con el programa. Si el usuario pulsa una letra n (mayúscla o minúscula), el programa finalizará. Cualquier otra entrada repetirá la pregunta
+// El usuario teclea Si, como no es la letra s pues dirá Error, ¿Desa seguir con el programa?
+
+
+let num_13 = "a"
+
+while (num_13.toLocaleLowerCase() !== "n") {
+    num_13 = prompt("¿Desea continuar con el programa? s | n")
+}
+console.log("Programa finalizado.");
+
 // 1-4
 // 1-5
 // 1-6

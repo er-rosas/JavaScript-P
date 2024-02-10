@@ -251,13 +251,47 @@ console.log("Programa finalizado.");
 // Determinar si el número que teclea el usuario es primo o no. Recordar que un número primo es el que solo puede dividirse por si mismo y por la unidad.
 // Si el usuario telcea el 3: dirá que 3 es primo. Si telcea el 4 dirá que 4 no es primo.
 
-let num_14 = parseInt(prompt("Ingrese un número entero para verificar si es primo."))
-let simismo_14 = num_14 / num_14
-let uno_14 = num_14 / 1
 
-while (num_14 ) {
-    
+
+
+let num_14 = parseInt(prompt("Teclear un numero entero"));
+let divisor_14 = 2;
+let esPrimo_14 = " Si";
+
+while ((divisor_14 <= num_14) && (num_14 % divisor_14 != 0)){
+    divisor_14++;
 }
+if(divisor_14 < num_14){
+esPrimo_14=" NO";
+}
+console.log("El número "+ num_14 + esPrimo_14 +" es primo");
+
+
+// let num_14 = parseInt(prompt("Ingrese un número entero para verificar si es primo."))
+// let contar_14 = 0;
+// let contar2_14 = 9;
+// let simismo_14
+// let uno_14 = num_14 / 1
+
+// if(divisor < num_14){
+// while (contar_14 < num_14) {
+//     simismo_14 = num_14 / contar_14
+//     contar_14++;
+
+// }
+
+// let num_99 = parseInt(prompt("Ingrese un numero entero"))
+// let contar_99 = 0;
+// lista_11 ='';
+
+// while (contar_11 < num_11) {
+//     lista_11 += contar_11 + ', ';
+//     contar_11++;
+// }
+// lista_11 += contar_11;
+// console.log(lista_11);
+
+
 
 // 1-5
 // 1-6

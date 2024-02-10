@@ -247,6 +247,18 @@ while (num_13.toLocaleLowerCase() !== "n") {
 console.log("Programa finalizado.");
 
 // 1-4
+
+// Determinar si el número que teclea el usuario es primo o no. Recordar que un número primo es el que solo puede dividirse por si mismo y por la unidad.
+// Si el usuario telcea el 3: dirá que 3 es primo. Si telcea el 4 dirá que 4 no es primo.
+
+let num_14 = parseInt(prompt("Ingrese un número entero para verificar si es primo."))
+let simismo_14 = num_14 / num_14
+let uno_14 = num_14 / 1
+
+while (num_14 ) {
+    
+}
+
 // 1-5
 // 1-6
 // 1-7

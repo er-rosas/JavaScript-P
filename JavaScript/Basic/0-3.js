@@ -299,6 +299,39 @@ console.log("El número "+ num_14 + esPrimo_14 +" es primo");
 // La contrasñe es por ejemplo pasar. Tecleo tres veces otra distinta: Acceso Intruso.
 
 
+let pass_15 = prompt("Escriba contraseña");
+let acceso_15 = "Acceso concedido";
+let try_15 = 0;
+
+while (pass_15 != "pass123" && try_15 < 3){
+    pass_15 = prompt("Escriba contraseña");
+    acceso_15 = "Acceso Denegado";
+    console.log(acceso_15);
+    try_15++;
+    if (try_15 == 3) {
+        acceso_15 = "Alerta, intruso";
+    };
+    break;
+}
+
+console.log(acceso_15);
+
+
+// let clave, veces = 0, acceso = "pasar", msg;
+// while (clave != acceso && veces < 3){
+//         clave = prompt("Teclee su clave");
+//     if (clave == acceso){
+//             alert("Acceso concedido")
+//     }
+//     else{
+//             alert("Acceso denegado")
+//         veces++;
+//     }
+// }
+// if (veces == 3){
+//         alert("Alerta Intruso");
+// }
+
 // 1-6
 // 1-7
 // 1-8

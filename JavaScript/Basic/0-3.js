@@ -333,6 +333,21 @@ console.log(acceso_15);
 // }
 
 // 1-6
+
+// En este script se pedirá al usuario que teclee un número cada vez. El proceso acaba cuando teclee un 0 en cuyo caso además mostrará la suma de todos los números tecleados.
+// El usuario teclea primero el 4 luego el 5 depsués 6 y finalmente , 0. El programa se para y muestra "La suma de todos los número es 15"
+
+
+let num_16 = parseInt(prompt("Escriba un número que luego sera sumado."));
+let sum_16 = 0
+
+
+while (num_16 != 0){
+    sum_16 += num_16
+    num_16 = parseInt(prompt("Escriba otro número que luego sera sumado."));
+}
+console.log("La suma de todos los número es " + sum_16)
+
 // 1-7
 // 1-8
 // 1-9

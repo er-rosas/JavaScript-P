@@ -349,6 +349,41 @@ while (num_16 != 0){
 console.log("La suma de todos los número es " + sum_16)
 
 // 1-7
+
+// ste script le pide al usuario que vaya tecleando números enteros positivos hasta que el usuario ingrese el 0. En esete caso el programa acaba mostrando el valor máximo y mínimo de los números tecleados.
+// El susuario teclea la sere 4,2,3,5,0, El máximo es 5 y el minimo es 2. Si telcea 2,2,2,0, máximo es 2 y minimo es 2.
+
+
+let num_17
+let try_17 = 0;
+
+let numeros_17 = []
+
+while (num_17 != 0 && try_17 < 5){
+    num_17 = parseInt(prompt("Escriba un numero entero"));
+    numeros_17.push(num_17)
+    try_17++;
+}
+console.log(numeros_17);
+console.log(`El máximo es ${Math.max(...numeros_17)} y el minimo es ${Math.min(...numeros_17)}`);
+
+
+// let max=0, min=0, numero;
+// numero = parseInt(prompt("Teclee un número"));
+// min = numero;
+// while (numero !=0){
+//     max = (numero > max)?numero:max;
+//     min = (numero < min)?numero:min;
+//     numero = parseInt(prompt("Teclee un número"));
+// }
+// if ( max== 0){
+//     alert("No ha tecleado ningún número ")
+// }
+// else{
+//     alert("El máximo es "+ max + "\nEl mínimo es "+min);
+// }
+
+
 // 1-8
 // 1-9
 // 2-0

@@ -385,5 +385,21 @@ console.log(`El máximo es ${Math.max(...numeros_17)} y el minimo es ${Math.min(
 
 
 // 1-8
+
+// Este script le pide al usuario que vaya tecleando números una y otra vez, pero solo números pares, en caso de que teclee un número impar el programa acabará y dirá la cantidad de números pares ingresados (el 0 cuenta como par).
+// Muestra Si escribo 2,8,12,1 el script me dirá "Ha escrito 3 números pares")
+
+let num_18 = parseInt(prompt("Ingrese un numero par."));
+let resto_18 = num_18 % 2
+
+let try_18 = 0
+
+while (resto_18 === 0) {
+    num_18 = parseInt(prompt("Ingrese un numero par."));
+    resto_18 = num_18 % 2
+    try_18++;
+}
+
+console.log(`Ha escrito ${try_18} números pares.`);
 // 1-9
 // 2-0

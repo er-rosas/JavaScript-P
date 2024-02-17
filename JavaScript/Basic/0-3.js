@@ -398,5 +398,29 @@ while (num_18 % 2 === 0) {
 }
 
 console.log(`Ha escrito ${try_18} números pares.`);
+
 // 1-9
+
+// Este script muestra un menu de opciones: 1- Leer datos. 2- Mostrar datos 3- Fin. El usuario deberá teclear uno de ellos y el programa mostrará la opción elegida. Si teclea un valor fuera del menu se mostrará un mensaje de error y se vuelve a pedir un número de opción. El programa finaliza al teclear el 3.
+// Pulso 1, mensaje Opción leeer datos. Y vuelve a pader opción. Pulso 4 : Error y vuelve a pedir opción, Pulso 3: Fin del programa y acaba.
+
+let menu_19
+
+while (menu_19 != 3) {
+    menu_19 = parseInt(prompt("Opciones: \n 1- Leer datos. \n 2- Mostrar datos. \n 3- Fin."));
+    switch (menu_19) {
+        case 1:
+            console.log("Opción: Leeer datos.")
+            break;
+        case 2:
+            console.log("Opción: Mostrar datos.")
+            break;
+        case 3:
+            console.log("Opción: Finalizar.")
+            break;
+        default:
+            console.error("Error, opción incorrecta")
+            break;
+    };
+};
 // 2-0

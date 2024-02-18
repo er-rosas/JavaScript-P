@@ -424,3 +424,19 @@ while (menu_19 != 3) {
     };
 };
 // 2-0
+
+// Un script pedirá al usuario que vaya tecleando números de manera repetida. cuando pulse 0, el programa muestra "La suma es " seguido de la suma de los números. Si esta suma es par el programa se repite y si es impar el programa acaba.
+// Si tecleo 2,6,2, 0 Me dirá suma "10" y volverá a pedir otra serie de números, si tecleo 2,6,3 Me dirá "suma 11" y acabará.
+
+let num_20 = parseInt(prompt("Ingrese números enteros de manera repetida, si ingresa 0 se para el programa."));
+let sum_20 = 0
+
+while (num_20 != 0) {
+    num_20 = parseInt(prompt("Ingrese números enteros de manera repetida, si ingresa 0 se para el programa."));
+    sum_20 += num_20
+    if (sum_20 % 2 === 0) {
+        console.log("La suma es " + sum_20)
+        num_20 = 0
+    }
+};
+console.log("La suma es " + sum_20)

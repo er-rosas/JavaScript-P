@@ -497,6 +497,48 @@ do {
 console.log("Correcto");
 
 // 2-2
+
+// Este script usará un bucle do while para determinar si un número es primo o no. El numero tecleado deberá estar entre 0 y 100. Si es primo lo mostrará en una ventana alert.
+// Recuerda que un número primo es el que es divisible por 1 y por sí mismo: 7 es primo (solo es deivisible entre 1 y 7), 8 no es primo (puede dividirse entre 1, 2, 4 y 8)).
+
+// Si escribo 0 o 100 el programa me seguirá pidiendo un número
+
+
+
+let num_22 = parseInt(prompt("Teclear un numero entero entre el 0 y el 100"));
+let divisor_22 = 2;
+let esPrimo_22= " Si";
+
+if(num_22 < 0 || num_22 > 100){
+    console.log("Número no válido.")
+    num_22 = parseInt(prompt("Teclear un numero entero entre el 0 y el 100"));
+}
+
+do {
+    divisor_22++;
+} while (divisor_22 <= num_22 && num_22 % divisor_22 != 0);
+
+if(divisor_22 < num_22 || divisor_22 > num_22){
+    esPrimo_22=" NO";
+}
+
+console.log("El número "+ num_22 + esPrimo_22 +" es primo");
+
+
+
+
+
+
+
+while ((divisor_22 <= num_22) && (num_22 % divisor_22 != 0)){
+    divisor_22++;
+}
+if(divisor_22 < num_22){
+esPrimo_22=" NO";
+}
+console.log("El número "+ num_22 + esPrimo_22 +" es primo");
+
+
 // 2-3
 // 2-4
 // 2-5

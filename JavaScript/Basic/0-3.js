@@ -428,15 +428,80 @@ while (menu_19 != 3) {
 // Un script pedirá al usuario que vaya tecleando números de manera repetida. cuando pulse 0, el programa muestra "La suma es " seguido de la suma de los números. Si esta suma es par el programa se repite y si es impar el programa acaba.
 // Si tecleo 2,6,2, 0 Me dirá suma "10" y volverá a pedir otra serie de números, si tecleo 2,6,3 Me dirá "suma 11" y acabará.
 
-let num_20 = parseInt(prompt("Ingrese números enteros de manera repetida, si ingresa 0 se para el programa."));
-let sum_20 = 0
+let suma_shat = 0;
 
-while (num_20 != 0) {
-    num_20 = parseInt(prompt("Ingrese números enteros de manera repetida, si ingresa 0 se para el programa."));
-    sum_20 += num_20
-    if (sum_20 % 2 === 0) {
-        console.log("La suma es " + sum_20)
-        num_20 = 0
+while (true) {
+    let numero_shat = parseInt(prompt("Introduce un número (0 para terminar):"));
+    
+    if (isNaN(numero_shat)) {
+        alert("Por favor, introduce un número válido.");
+        continue;
     }
+
+    if (numero_shat === 0) {
+        console.log("La suma es " + suma_shat);
+        if (suma_shat % 2 === 0) {
+            alert("La suma es par. Vuelve a introducir números.");
+            suma_shat = 0;
+            continue;
+        } else {
+            alert("La suma es impar. Fin del programa.");
+            break;
+        }
+    }
+
+    suma_shat += numero_shat;
+}
+
+
+
+
+
+
+let sum_20 = 0
+let num_20
+
+while (sum_20 % 2 == 0) {
+    num_20 = parseInt(prompt("Ingrese números enteros de manera repetida, si ingresa 0 se para el programa."));
+    while (num_20 != 0) {
+        sum_20 += num_20;
+        num_20 = parseInt(prompt("Ingrese números enteros de manera repetida, si ingresa 0 se para el programa."));
+    }
+    console.log("La suma es " + sum_20);
+    sum_20 = 0
 };
-console.log("La suma es " + sum_20)
+console.log("Fin de la prueba");
+
+
+let suma=0, numero;
+while (suma%2==0){
+    numero = parseInt(prompt("Teclear un número"));
+    while(numero != 0){
+        suma += numero;
+        numero = parseInt(prompt("Teclear un número"));
+        }
+    alert("La suma es "+suma);
+}
+alert("Fin de la prueba");
+
+// 2-1
+
+// Realiza un script que le pida al usuario que teclee la letra A (en mayúscula) y mientras no lo haga se lo vuelva a pedir. Usa un bulce do..while y la ventana alert para los mensajes
+// El usuario teclea b, el programa vuelve a pedirme que teclee una letra
+
+let letra_21 = ""
+
+do {
+    letra_21 = prompt("Ingrese la letra A");
+} while (letra_21 != "A");
+console.log("Correcto");
+
+// 2-2
+// 2-3
+// 2-4
+// 2-5
+// 2-6
+// 2-7
+// 2-8
+// 2-9
+// 3-0

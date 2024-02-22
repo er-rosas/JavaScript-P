@@ -530,16 +530,58 @@ console.log("El número "+ num_22 + esPrimo_22 +" es primo");
 
 
 
-while ((divisor_22 <= num_22) && (num_22 % divisor_22 != 0)){
-    divisor_22++;
-}
-if(divisor_22 < num_22){
-esPrimo_22=" NO";
-}
-console.log("El número "+ num_22 + esPrimo_22 +" es primo");
+// while ((divisor_22 <= num_22) && (num_22 % divisor_22 != 0)){
+//     divisor_22++;
+// }
+// if(divisor_22 < num_22){
+// esPrimo_22=" NO";
+// }
+// console.log("El número "+ num_22 + esPrimo_22 +" es primo");
 
 
 // 2-3
+
+// En este script vas a crear un menu con tres opciones: escribir, leer, salir. El usuario elegirá una opción y en un alert se le indicará la opción elegida. El programa vuelve a mostrar el menu y se repite el proceso. El script acabará cuando se pulse la opción de salir.
+// El menu tiene 3 opciones, elijo la opción 2, respuesta "has elegido leer".
+
+let menu_23 = prompt("Elija entre estas opciones del menu: 1. escribir, 2, leer y 3. salir.")
+
+do {
+    if (menu_23 == "1") {
+        console.log("Has elegido escribir.")
+        menu_23 = prompt("Elija entre estas opciones del menu: 1. escribir, 2, leer y 3. salir.")
+    } else {
+        console.log("Has elegido leer.")
+        menu_23 = prompt("Elija entre estas opciones del menu: 1. escribir, 2, leer y 3. salir.")
+    }
+} while (menu_23 == "1" || menu_23 == "2");
+
+console.log("Has elegido salir.")
+
+
+
+
+let opcion = '';
+
+do{
+    opcion = prompt("1.- Escribir\n 2.- Leer\n 3.- Salir\n Escoge una opción:");       
+switch(opcion){
+    case '1':
+        alert("Eliges Escribir")
+        break; 
+    case '2':
+        alert("Eliges Leer")
+        break; 
+    case '3':
+        alert("fin del programa");
+        break;
+    default:
+        alert("debes elegir una de las opciones")
+    }
+}
+while(opcion != '3');
+
+
 // 2-4
 // 2-5
 // 2-6

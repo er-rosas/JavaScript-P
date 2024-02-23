@@ -583,6 +583,22 @@ while(opcion != '3');
 
 
 // 2-4
+
+// En este script se le pide al usuario que teclee dos números, el script mostrará la suma y pedirá al usuario si queire repetir. Si teclea S repite y si teclea N el programa sale. No debe aceptar otras teclas
+// Por ejemplo si tecleo 3 despues 9 me dirá que la suma es 12, y luego me preguntará si quiero repetir.
+
+let repetir_24 = "S"
+let num1_24
+let num2_24
+let sum_24
+
+do {
+    num1_24 = parseInt(prompt("Ingrese el 1er número."))
+    num2_24 = parseInt(prompt("Ingrese el 2do número."))
+    sum_24 = num1_24 + num2_24
+    console.log(`La suma es ${sum_24}.`)
+    repetir_24 = prompt("¿Desea repetir? S o N").toLocaleUpperCase();
+} while (repetir_24 == "S");
 // 2-5
 // 2-6
 // 2-7

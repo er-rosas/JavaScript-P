@@ -605,11 +605,25 @@ do {
 // Usar un bucle do..while para crear una cadena que contenga letras repetidas. Las letras se entran por teclado y solo podrán ser la X o la Z despues de elegir las letras se le ingresa el número de repeticiones que deberá estar entre 1 y 15.
 // Si elijo X y luego tecleo 10 se mostrará XXXXXXXXXX. Si tecleo M me volverá a pedir letra, y si tecleo 20 me volverá a pedir el número
 
-let letra_25
+let letra_25 = ""
+let veces_25 = 0
 
 do {
-    
-} while (condition);
+    letra_25 = prompt("Ingrese la letra X o Z");
+} while (letra_25 !== "X" && letra_25 !== "Z");
+
+do {
+    veces_25 = parseInt(prompt("Ingrese un número entre el 1 y el 15 de veces a repetir."));
+} while (isNaN(veces_25) || veces_25 < 1 || veces_25 > 15);
+
+let cadena_25 = "";
+
+for (let index = 0; index < veces_25; index++) {
+    cadena_25 += letra_25
+}
+
+console.log(cadena_25)
+
 // 2-6
 // 2-7
 // 2-8

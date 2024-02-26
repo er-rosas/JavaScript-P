@@ -599,7 +599,17 @@ do {
     console.log(`La suma es ${sum_24}.`)
     repetir_24 = prompt("¿Desea repetir? S o N").toLocaleUpperCase();
 } while (repetir_24 == "S");
+
 // 2-5
+
+// Usar un bucle do..while para crear una cadena que contenga letras repetidas. Las letras se entran por teclado y solo podrán ser la X o la Z despues de elegir las letras se le ingresa el número de repeticiones que deberá estar entre 1 y 15.
+// Si elijo X y luego tecleo 10 se mostrará XXXXXXXXXX. Si tecleo M me volverá a pedir letra, y si tecleo 20 me volverá a pedir el número
+
+let letra_25
+
+do {
+    
+} while (condition);
 // 2-6
 // 2-7
 // 2-8

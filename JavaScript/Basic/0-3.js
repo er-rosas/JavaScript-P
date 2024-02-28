@@ -631,10 +631,20 @@ console.log(cadena_25)
 
 let num1_26 = parseInt(prompt("Ingrese el primer número."));
 let num2_26 = parseInt(prompt("Ingrese el segundo número."));
+let resto_26
+let mcd = 0
 
 do {
-    console.log
-} while (num1_26 % num2_26 == 0);
+    resto_26 = num1_26 % num2_26
+    if (resto_26 == 0) {
+        mcd = num2_26
+    } else {
+        num1_26 = num2_26;
+        num2_26 = resto_26;
+    }
+} while (resto_26 != 0);
+console.log("El mcd es el " + mcd)
+
 // 2-7
 // 2-8
 // 2-9

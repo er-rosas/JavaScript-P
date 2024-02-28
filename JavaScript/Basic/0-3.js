@@ -625,6 +625,16 @@ for (let index = 0; index < veces_25; index++) {
 console.log(cadena_25)
 
 // 2-6
+
+// En este script se trata de calcular el máximo común divisor de dos números. El algorimto es simple: dividimos el primer por el segundo. si el resto es cero este segundo es el mcm. Si no se desecha el primero y se repite el proceso con el segundo y el resto. Así mientras el resto no sea 0
+// Si tecleo 20 y luego 10, el mcd es 10. Si tecleo 4 y luego 20 el mcd será 4. Si tecleo 20 y 8 el mcd es 4.
+
+let num1_26 = parseInt(prompt("Ingrese el primer número."));
+let num2_26 = parseInt(prompt("Ingrese el segundo número."));
+
+do {
+    console.log
+} while (num1_26 % num2_26 == 0);
 // 2-7
 // 2-8
 // 2-9

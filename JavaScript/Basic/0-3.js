@@ -646,6 +646,52 @@ do {
 console.log("El mcd es el " + mcd)
 
 // 2-7
+
+// Este ejemplo debe pedir al usuario un  número entero y, mediante sucesivas divisiones por 10 debe escribir los digitos que lo forman de menor a mayor orden (de unidades hacia arriba) en una cadena separados por un espacio
+// Si escribo 126 deberá responder  "Dígitos del número: 6 2 1"
+
+// No vale usar cadenas (strings) se debe usar la división como dice el enunciado.
+
+// let num_27 = parseInt(prompt("Ingrese un número entero."))
+// let divisor_27 = 0
+// let unidades_27
+// let digitos_27 = ""
+
+// do {
+//     divisor_27 += 10
+//     unidades_27 = num_27 / divisor_27
+//     digitos_27 += unidades_27 + " "
+// } while (divisor_27 <= num_27);
+
+// console.log("Digitos del número: " + digitos_27)
+
+// Pedir al usuario un número entero
+let num_27 = parseInt(prompt("Ingrese un número entero:"));
+
+let digitos_27 = []; // Array para almacenar los dígitos
+
+// Bucle do-while para descomponer el número en sus dígitos
+do {
+    // Obtener el dígito menos significativo usando el operador de módulo (%)
+    let digito = num_27 % 10;
+    // Agregar el dígito al principio del array
+    digitos_27.unshift(digito);
+    // Dividir el número por 10 para "eliminar" el dígito menos significativo
+    num_27 = Math.floor(num_27 / 10);
+} while (num_27 > 0);
+
+// Mostrar los dígitos en orden de menor a mayor
+console.log("Dígitos del número:", digitos_27.join(' '));
+
+let numero__27, salida__27 = '', digito__27;
+numero = parseInt(prompt("teclear un número"));
+do{
+    digito =  numero%10;
+    numero = parseInt(numero/10);
+    salida += digito+'  ';
+}while (numero >0)
+alert("Dígitos del número "+salida);
+
 // 2-8
 // 2-9
 // 3-0

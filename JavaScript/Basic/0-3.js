@@ -693,5 +693,35 @@ do{
 alert("Dígitos del número "+salida);
 
 // 2-8
+
+// Diseñar un script que pida un número mayor que cero y devuelva la suma de todos los números pares desde cero al número introducido. Mostrará la suma y volverá a pedir otro núero hasta que el usuario teclee un 0.
+// Si tecleo el 10 mostrará 30 la suma de 2+4+6+8+10
+
+let num_28 = parseInt(prompt("Ingrese un número entero mayor a 0."))
+let suma2_28 = 0
+let sumapar_28 = 0
+
+if (num_28 > 0) {
+    do {
+        suma2_28 += 2
+        sumapar_28 += suma2_28
+    } while (suma2_28 < num_28);
+    console.log("Ka Sume de todos los número par es " + sumapar_28)
+} else {
+    num_28 = parseInt(prompt("Ingrese un número entero mayor a 0."))
+}
+
+// Otra forma
+// let numero, suma;
+// do{
+//     suma = 0;
+//     numero = parseInt(prompt("Teclear un número"));
+//     contar = numero;
+//     do{
+//         suma += (numero%2==0)? numero:0;
+//         numero--;
+//   	     }while (numero >0);
+// }while (contar > 0)
+
 // 2-9
 // 3-0

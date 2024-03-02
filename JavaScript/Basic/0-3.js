@@ -724,4 +724,16 @@ if (num_28 > 0) {
 // }while (contar > 0)
 
 // 2-9
+
+// Escribir un script usando el bucle do while para pedir que el usuario escriba dos números. Si el primero es mayor que el segundo el programa volverá a pedir que se escriban los números. Si el primero es menor o igual que el segundo el programa acaba y dice "Numeros en orden creciente"
+// Si tecleo pimero un 12 y luego un 9, volverá a pedirme que escriba los datos. Si escribo un 12 y luego un 20 me dirá "Numeros ordenados"
+
+let num1_29 = parseInt(prompt("1- Ingrese el primer número."))
+let num2_29 = parseInt(prompt("2- Ingrese el segundo número."))
+
+do {
+    num1_29 = parseInt(prompt("1- Ingrese el primer número de nuevo."))
+    num2_29 = parseInt(prompt("2- Ingrese el segundo número de nuevo."))
+} while (num1_29 >= num2_29);
+console.log("Numeros ordenados.");
 // 3-0

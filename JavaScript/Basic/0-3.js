@@ -747,11 +747,11 @@ console.log("Numeros ordenados.");
 
 // No vale usar strings, solo las operaciones matemáticas necesarias con el número.
 
-let num1_30 = parseInt(prompt("1- Ingrese el primer número."))
-let num2_30 = parseInt(prompt("2- Ingrese el segundo número."))
-
-do {
-    num1_29 = parseInt(prompt("1- Ingrese el primer número de nuevo."))
-    num2_29 = parseInt(prompt("2- Ingrese el segundo número de nuevo."))
-} while (num1_29 >= num2_29);
-console.log("Numeros ordenados.");
+let numero__30, salida__30 = '', digito__30;
+numero = parseInt(prompt("teclear un número"));
+do{
+    digito =  numero%10;
+    numero = parseInt(numero/10);
+    salida += digito+'  ';
+}while (numero >0)
+alert("Dígitos del número "+salida);

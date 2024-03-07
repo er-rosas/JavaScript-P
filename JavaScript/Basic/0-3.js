@@ -747,11 +747,22 @@ console.log("Numeros ordenados.");
 
 // No vale usar strings, solo las operaciones matemáticas necesarias con el número.
 
-let numero__30, salida__30 = '', digito__30;
-numero = parseInt(prompt("teclear un número"));
+let numeroInicio__30;
+let numero__30;
+let salida__30 = '';
+let digito__30;
+let inverso__30
+
+numeroInicio__30 = parseInt(prompt("teclear un número"));
+numero__30 = numeroInicio__30
 do{
-    digito =  numero%10;
-    numero = parseInt(numero/10);
-    salida += digito+'  ';
-}while (numero >0)
-alert("Dígitos del número "+salida);
+    digito__30 =  numero__30%10;
+    numero__30 = parseInt(numero__30/10);
+    salida__30 += digito__30
+}while (numero__30 >0)
+if (salida__30 != numeroInicio__30) {
+    inverso__30 = "no es un número palíndromo"
+} else {
+    inverso__30 = "es un número palíndromo"
+}
+console.log(numeroInicio__30 + " " + inverso__30);

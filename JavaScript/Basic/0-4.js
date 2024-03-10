@@ -14,18 +14,30 @@ console.log(sumar(a,b))
 // Esta función se va a llamar esPar(num) y deberá devolver verdadero si el argumento es par y falso si es impar. Se acepta que solo se usarán números válidos.
 // Por ejemplo al llamarla como esPar(5) me dará false, mientras que con esPar(6) me dará true.
 
+let num_02a
+let result
 
 function esPar(num_02) {
     if (isNaN(num_02)) {
-        alert("Por favor, introduce un número válido.");
-        // continue;
+        return alert("Por favor, introduce un número válido.");
     }
-    if (num) {
-
+    result = num_02 % 2
+    if (result === 0) {
+        return console.log("Es par")
+    } else {
+        return console.log("Es impar")
     }
-
 }
-num_02 = parseInt(prompt("Ingrese un número"))
+num_02a = parseInt(prompt("Ingrese un número"))
+console.log(esPar(num_02a))
+
+// function esPar(num){
+//     return (num%2 == 0);
+// }
+// dato = parseInt(prompt("Escribir un número"));
+// alert(esPar(dato));
+
+
 // 0-3
 // 0-4
 // 0-5

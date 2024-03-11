@@ -39,6 +39,16 @@ console.log(esPar(num_02a))
 
 
 // 0-3
+
+// Función que calcule si un número es múltiplo de otro. La función recibirá dos argumentos, el primero será el supuesto mutiplo del segundo argumento.
+// Si ejecuto o llamo a la función con esMultiplo(40,4) debe devolver true porque 40 es divisible por 4. Si ejecutas esMultiplo(23,4) dará false.
+
+function esMultiplo03(multiplo03, numero03) {
+    return multiplo03 % numero03 === 0
+}
+multiplo03 = parseInt(prompt("Ingrese un número"))
+numero03 = parseInt(prompt("Ingrese un número"))
+console.log(esMultiplo03(multiplo03,numero03))
 // 0-4
 // 0-5
 // 0-6

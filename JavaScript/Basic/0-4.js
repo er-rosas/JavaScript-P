@@ -49,7 +49,20 @@ function esMultiplo03(multiplo03, numero03) {
 multiplo03 = parseInt(prompt("Ingrese un número"))
 numero03 = parseInt(prompt("Ingrese un número"))
 console.log(esMultiplo03(multiplo03,numero03))
+
 // 0-4
+
+// Definir una función que cree una cadena de letras repetidas tantas veces como le digamos. La función recibe dos argumentos: la letra y el número de repeticiones.
+// Al ejecutar repetir('a', 5) deberá devover la cadena  aaaaa.
+
+function repetir04(letra04, numero04) {
+    let cadena = ''
+    for (let index = 0; index < numero04; index++) {
+        cadena += letra04
+    }
+    return cadena
+}
+console.log(repetir04("a",5))
 // 0-5
 // 0-6
 // 0-7

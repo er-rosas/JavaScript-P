@@ -77,21 +77,41 @@ console.log(repetir04("a",5))
 // Si me piden el MCD(10, 5) tendré 5 como solución, y el MCD( 24, 9) será 1, y el MCD(12,20) será 4
 
 function MCD05(A, B) {
-    if (A=== 0) {
-        return 'El MCD es '+ B
-    }
-    if (B=== 0) {
-        return 'El MCD es '+ A
-    }
-    let resto, resto2
-    while (A != 0 && B != 0) {
-        resto2 = B
+    let resto = 0
+    let mcd
+    do {
         resto = A % B
+        A = B
         B = resto
-    }
-    return 'El MCD es ' + resto2
+    } while (A != 0 && B != 0);
+    if (A === 0) mcd = B;
+    if (B === 0) mcd = A;
+    return 'El MCD es ' + mcd
 }
 console.log(MCD05(10,5))
+
+// otra solucion
+function mcdEuclides(a, b) {
+    // Si alguno de los números es 0, el otro número es el máximo común divisor
+    if (a === 0) return b;
+    if (b === 0) return a;
+
+    // Iterativamente aplicamos el algoritmo de Euclides hasta que b sea 0
+    while (b !== 0) {
+        const temp = b;
+        b = a % b;
+        a = temp;
+    }
+
+    // Cuando b se vuelve 0, el valor de a es el máximo común divisor
+    return a;
+}
+
+// Ejemplos de uso
+console.log(mcdEuclides(10, 5));  // Output: 5
+console.log(mcdEuclides(24, 9));  // Output: 3
+console.log(mcdEuclides(12, 20)); // Output: 4
+
 // 0-6
 // 0-7
 // 0-8

@@ -63,7 +63,35 @@ function repetir04(letra04, numero04) {
     return cadena
 }
 console.log(repetir04("a",5))
+
 // 0-5
+
+// Usa el algoritmo de Euclides para diseñar una función que determine el máximo común divisor de dos números. Bueno este algoritmo es bien simple. Para clacular el mcd de A y B:
+
+// Si A = 0 entonces MCD(A,B)=B, ya que el MCD(0,B)=B, y podemos detenernos.  
+// Si B = 0 entonces MCD(A,B)=A, ya que el MCD(A,0)=A, y podemos detenernos.  
+// Calcula el resto de A/B
+// Asigna a A el valor de B
+// Asigna a B el resto
+// Repite hasta que A o B sean 0.
+// Si me piden el MCD(10, 5) tendré 5 como solución, y el MCD( 24, 9) será 1, y el MCD(12,20) será 4
+
+function MCD05(A, B) {
+    if (A=== 0) {
+        return 'El MCD es '+ B
+    }
+    if (B=== 0) {
+        return 'El MCD es '+ A
+    }
+    let resto, resto2
+    while (A != 0 && B != 0) {
+        resto2 = B
+        resto = A % B
+        B = resto
+    }
+    return 'El MCD es ' + resto2
+}
+console.log(MCD05(10,5))
 // 0-6
 // 0-7
 // 0-8

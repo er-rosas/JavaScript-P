@@ -113,6 +113,37 @@ console.log(mcdEuclides(24, 9));  // Output: 3
 console.log(mcdEuclides(12, 20)); // Output: 4
 
 // 0-6
+
+// Diseña una función que calcule el factorial de un número, usa una función recursiva (que se llama a si misma). Recuerda que el factorial de un número es el resultado de multiplicar cada número por el anterior hasta llegar a 1. Y el factorail de 0 es por definición 1
+// Si escribo factorial(3) obtendré 3*2*1 = 6,
+
+function factorail06(num06) {
+    let result06 = 0
+    if(num06 === 0) {
+        return result06 = 1
+    }
+    let mult06 = 1
+    while (num06 > 0) {
+        result06 = num06 * mult06
+        mult06 = result06
+        num06--
+    }
+    return result06
+}
+console.log(factorail06(3))
+
+// Otra respuesta con la funcion factoial correcta
+
+function factorial(n){
+    if(n==0) {
+        return 1
+    }
+    return n*factorial(n-1)
+}
+var dato;
+dato = parseInt(prompt("escirbe un número"));
+alert("Factorial de "+dato+" = "+ factorial(dato))
+
 // 0-7
 // 0-8
 // 0-9

@@ -145,6 +145,34 @@ dato = parseInt(prompt("escirbe un número"));
 alert("Factorial de "+dato+" = "+ factorial(dato))
 
 // 0-7
+
+// Escribir una función que reciba un número como argumento y lo devuelva invertido, o sea, escrito del revés. Usar esta función para determinar si un número es capicúa (palíndromo)
+// Si ejecuto invertir(123) me deberá devolver el número 321 y me diría que no es capicua. Sin embargo si hago invertir(242) el resultado sería 242, y la prueba me diría que es capicúa.
+
+function invertir07(num07) {
+// let numeroInicio__30;
+let numero__30;
+let salida__30 = '';
+let digito__30;
+let inverso__30
+
+// num07 = parseInt(prompt("teclear un número"));
+numero__30 = num07
+do{
+    digito__30 =  numero__30%10;
+    numero__30 = parseInt(numero__30/10);
+    salida__30 += digito__30
+}while (numero__30 >0)
+if (salida__30 != num07) {
+    inverso__30 = "no es un número palíndromo"
+} else {
+    inverso__30 = "es un número palíndromo"
+}
+return num07 + " " + inverso__30;
+}
+
+console.log(invertir07(242))
+
 // 0-8
 // 0-9
 // 1-1

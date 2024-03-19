@@ -174,5 +174,36 @@ return num07 + " " + inverso__30;
 console.log(invertir07(242))
 
 // 0-8
+
+// Escribe una función que reciba como argumento un precio y el porcentaje de impuestos. La función devolverá el valor total a pagar, teniendo en cuenta que al precio sin impuestos se le descuenta un porcentaje del 10% si es mayor de 100 euros.
+// Si he comprado por valor de 200 euros con un impuesto del 5%, me descuentan un 10% por tanto pago 180 euros más los impuestos que son el 5% de 180. En total 189 euros.
+
+function impuesto08(precio08, impuestos08) {
+    let resto08
+    if (precio08 > 100) {
+        resto08 = precio08 * 0.1
+        precio08 -= resto08
+    }
+    impuestos08 = (impuestos08 / 100) + 1
+    precio08 = precio08 * impuestos08
+    return precio08
+}
+console.log(impuesto08(200,5))
+
+
+// otra forma de hacerlo
+// function total(precio, impto){
+//     var neto;
+//     if (precio > 100){
+//         precio = precio - 10*precio/100;
+//     }
+//     neto = precio + precio*impto/100;
+//     return neto;
+// }
+// var gasto, imp;
+// gasto = parseInt(prompt('Precio total'));
+// imp = parseInt(prompt('Impuesto %'));
+// alert("El total  pagar es "+total(gasto, imp));
+
 // 0-9
 // 1-1

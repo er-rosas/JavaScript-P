@@ -241,3 +241,12 @@ function miCalificacion09(nota09) {
 console.log(miCalificacion09(4))
 
 // 1-0
+
+// Escibe una función que devuelva el siglo al que correponde un año que se la pasa como argumento. El siglo 1 va del año 1 al 100, el siglo 2 va del 101 al 200....
+// Por ejemplo si le pido siglo(1910) me dirá siglo 20
+
+function siglo10(anio10) {
+    let siglo10 = parseInt(anio10 / 100) + 1;
+    return "Siglo " + siglo10
+}
+console.log(siglo10(1910))

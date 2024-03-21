@@ -206,4 +206,38 @@ console.log(impuesto08(200,5))
 // alert("El total  pagar es "+total(gasto, imp));
 
 // 0-9
-// 1-1
+
+// En esta función se trata de convertir notas a calificaciones literales de manera que menos de 5 es suspenso, un 5 es aprobado, el 6 es bine, el 7 y el 8 son notable, el 9 es sobresaliente y el 10 es matrícula.
+// Por ejemplo si pido miCalificacion(5) la función me dirá tu calificación es Aprobado
+
+function miCalificacion09(nota09) {
+    if (nota09 < 0) {
+        return "Ingrese un valor entre 0 y 10"
+    }
+    switch (true) {
+        case nota09 < 5:
+            return "Suspenso"
+            break;
+        case nota09 === 5:
+            return "Aprobado"
+            break;
+        case nota09 === 6:
+            return "Bien"
+            break;
+        case nota09 === 7 || nota09 === 8:
+            return "Notable"
+            break;
+        case nota09 === 9:
+            return "Sobresaliente"
+            break;
+        case nota09 === 10:
+            return "Matrícula"
+            break;
+        default:
+            return "Ingrese un valor entre 0 y 10"
+            break;
+    }
+}
+console.log(miCalificacion09(4))
+
+// 1-0

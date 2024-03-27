@@ -31,6 +31,26 @@ if (numeroDia >= 0 && numeroDia <= 6) {
 }
 
 // 0-2
+
+// Crea un array booleano con dos valores 'verdadero' y 'falso'. Este array te sirve para traduicr los valores true y false. Usalo para que el script muestre un alert con el nombre vedadero si un usuario teclea un valor entre 0 y 9 y falso en el caso contrario.
+// Por ejemplo al teclear 10 deberá devolver falso
+
+let bolleano02 = ['verdadero', 'falso']
+let num02 = parseInt(prompt('Escriba un numero entero del 0 al 9'))
+let respuesta
+if (num02 >= 0 && num02 < 10) {
+    respuesta = bolleano02[0]
+} else {
+    respuesta = bolleano02[1]
+}
+console.log('La respuesta es ' + respuesta);
+
+// manera mas acortada
+let booleano = ['falso', 'verdadero'], test, indice;
+test = parseInt(prompt("Teclear un número"));
+indice = (test <= 9 && test >= 0 )? 1:0;
+alert(booleano[indice]);
+
 // 0-3
 // 0-4
 // 0-5

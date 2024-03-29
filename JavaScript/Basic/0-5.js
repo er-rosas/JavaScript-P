@@ -56,9 +56,15 @@ alert(booleano[indice]);
 // Sin usar métodos del objeto array, diseña una función llamada sumaLista() capaz de sumar todos los números que forman el array que se le pase como argumento.
 // Si ejecuto sumaLista([2,4,5,1,2]) deberá devolver como resultado 14
 
-function sumaLista(params) {
-    let lista = []
+function sumaLista(lista){
+    let ind, suma=0;
+    for(ind=0; ind < lista.length; ind++)
+        {
+        suma += lista[ind];
+        }
+    return suma;
 }
+alert(sumaLista([2,3,1,4,6]))    //resultado 16
 // 0-4
 // 0-5
 // 0-6

@@ -57,7 +57,7 @@ alert(booleano[indice]);
 // Si ejecuto sumaLista([2,4,5,1,2]) deberá devolver como resultado 14
 
 function sumaLista(params) {
-    
+    let lista = []
 }
 // 0-4
 // 0-5

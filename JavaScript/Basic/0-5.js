@@ -66,6 +66,9 @@ function sumaLista(lista){
 }
 alert(sumaLista([2,3,1,4,6]))    //resultado 16
 // 0-4
+
+//sin terminar
+
 // 0-5
 // 0-6
 // 0-7

@@ -67,7 +67,27 @@ function sumaLista(lista){
 alert(sumaLista([2,3,1,4,6]))    //resultado 16
 // 0-4
 
-//sin terminar
+// Diseña un script que vaya leyendo números y guardándolos en un array. Una vez lleno mostrará el array y deberá decir cuantos números son pares y cuantos son impares. La entrada de datos termina cuando el usuario teclea 0 o un valor no numérico.
+// Intenta resolverlo sin usar métodos del objeto array, solo indices y longitudes de arrays.
+// No debe aceptar valores no numéricos (isNaN(valor) permite detectar valores no numéricos).
+// Por ejemplo si tecleo: 3,5,4,6,7,8, 11el script me dirá que el array de entrada es [3,5,4,6,7,8, 11] y que hay 3 pares y 4 impares.
+
+let num04
+let list04 = []
+while (num04 != 0) {
+    num04 = parseInt(prompt("Teclee una serie de números."))
+    if (isNaN(num04)) {
+        console.log("Ese no es un número")
+        break;
+    }
+    list04.push(num04)
+}
+console.log(`El array de entrada es ${list04} y que hay - pares y - impares.`)
+
+function name(params) {
+    
+
+}
 
 // 0-5
 // 0-6

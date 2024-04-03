@@ -74,20 +74,48 @@ alert(sumaLista([2,3,1,4,6]))    //resultado 16
 
 let num04
 let list04 = []
+let pares04 = 0
+let impares04 = 0
 while (num04 != 0) {
     num04 = parseInt(prompt("Teclee una serie de números."))
+    if (num04 === 0) {
+        console.log("Tecleó el número 0 programa terminado")
+        break;
+    }
     if (isNaN(num04)) {
         console.log("Ese no es un número")
         break;
     }
+
     list04.push(num04)
 }
-console.log(`El array de entrada es ${list04} y que hay - pares y - impares.`)
-
-function name(params) {
-    
-
+for(let ind=0; ind < list04.length; ind++){
+    if (list04[ind]%2==0) 
+        pares04++
+    else 
+        impares04++
 }
+
+console.log(`El array de entrada es ${list04} y que hay ${pares04} pares y ${impares04} impares.`)
+
+// Otra solución
+let lista=[], ind=0, pares=0, impares=0, numero;
+do{
+    numero= parseInt(prompt("Número "));
+    if(numero !=0 && !isNaN(numero)){
+        lista[ind] = numero
+        ind++;
+    }
+}while (numero !=0 && !isNaN(numero));
+alert("Lista de números "+lista);
+for(ind=0; ind < lista.length; ind++){
+    if (lista[ind]%2==0) 
+        pares++
+    else 
+        impares++
+}
+console.log("pares " + pares);
+console.log("Impares " + impares);
 
 // 0-5
 // 0-6

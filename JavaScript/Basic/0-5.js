@@ -118,6 +118,7 @@ console.log("pares " + pares);
 console.log("Impares " + impares);
 
 // 0-5
+//sin terminar
 // 0-6
 // 0-7
 // 0-8

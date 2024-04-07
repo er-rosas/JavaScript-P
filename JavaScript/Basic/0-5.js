@@ -123,7 +123,19 @@ console.log("Impares " + impares);
 // Se suponer el segundo parámetro será una letra con uno de dos valores: 'v' 'i'
 // min([4,5,7], 'v')  devolverá 4, mientras que min([4,5,7], 'i') devolverá 0.
 
-let array05 = []
+
+let cont05
+function array05(array_05, valor05) {
+    cont05 = 0
+    if (valor05 === "v") {
+        cont05 = array_05[0]
+        return cont05
+    } else if (valor05 === "i") {
+        
+    }
+}
+
+console.log(array05([4,5,6], "v"))
 
 // 0-6
 // 0-7

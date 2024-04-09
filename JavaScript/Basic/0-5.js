@@ -131,7 +131,7 @@ function array05(array_05, valor05) {
         cont05 = array_05[0]
         return cont05
     } else if (valor05 === "i") {
-        
+        return cont05
     }
 }
 

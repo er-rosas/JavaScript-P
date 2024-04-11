@@ -137,7 +137,52 @@ function array05(array_05, valor05) {
 
 console.log(array05([4,5,6], "v"))
 
+//Otra forma
+
+function min(lista, resp){
+let min = lista[0], indMin;
+for(let ind= 0; ind < lista.length; ind++){
+    if( lista[ind] < min){
+    min = lista[ind];
+    indMin = ind;
+    }
+}
+return (resp==="v"?min : indMin);
+}
+alert("valor minimo "+min([4,2,5,1,8],"v"));
+alert("Posicion del mínimo "+min([4,2,5,1,8],"i"));
+
 // 0-6
+
+// Escribe una función que determina si la letra que se le pasa como argumento se encuentra contenida dentro de un array de letras que se le pasa como segundo argumento.
+
+// Se trata de resolverlo sin usar métodos del objeto array, solo el dato tipo array.
+
+// existeEn('a', ['w','e','r','i']) devolverá false porque la letra 'a' no existe en el array
+
+function existenEn06(letra06, array06) {
+    for (let index = 0; index < array06.length; index++) {
+        if (letra06 === array06[index]) {
+            return true
+        } else{
+            return false
+        }
+    }
+}
+
+console.log(existenEn06("a", ['w','e','r','i']));
+
+
+function existeEn(letra, lista){
+    let ind=0;
+    while (lista[ind] != letra && ind < lista.length){
+        ind++
+    }
+    return (ind < lista.length)
+}
+ console.log(existeEn("a", ["d","e","r"]));   //dará false
+ console.log(existeEn("a", ["d","e","a"]));   //dará true
+
 // 0-7
 // 0-8
 // 0-9

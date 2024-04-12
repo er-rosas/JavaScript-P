@@ -190,12 +190,24 @@ function existeEn(letra, lista){
 // Solo se aceptan letras internacionales (sin acentos)
 // Por ejemplo esVocal('A') dirá true, mientras que esVocal("z") dirá false.
 
-function esVocal07(vocal07) {
-    let vocales = ["a","e","i","o","u"]
-    if () {
-        
-    }
+function esVocal07(letra07) {
+    letra07 = letra07.toLowerCase();
+    let vocales07 = ["a","e","i","o","u"];
+    return vocales07.includes(letra07);
 }
+console.log(esVocal07('A'));
+
+// otra forma
+function esVocal(letra){
+    let vocales = ['a','e','i','o','u','A','E','I','O','U'], ind;
+    for(ind=0; ind < vocales.length; ind++){
+        if(letra === vocales[ind]){
+            break;
+        }
+    }
+    return (ind < vocales.length);
+}
+console.log(esVocal("B"));
 // 0-8
 // 0-9
 // 1-0

@@ -208,6 +208,21 @@ function esVocal(letra){
     return (ind < vocales.length);
 }
 console.log(esVocal("B"));
+
 // 0-8
+
+// Escribe una función qeu reciba como argumento un array y que devuelva una cadena de caracteres formada por los elementos del array separados por un guión
+// Si llamamos a la función como listar(["rojo", "verde", "azul") deberá devolver "rojo-verde-azul"
+
+function listar08(array08) {
+    let result = ""
+    for (let index = 0; index < array08.length; index++) {
+        let elemento = array08[index];
+        result += elemento + ", ";
+    }
+    return result
+}
+
+console.log(listar08(["rojo", "verde", "azul"]))
 // 0-9
 // 1-0

@@ -233,5 +233,8 @@ console.log(listar08(["rojo", "verde", "azul"]))
 // Crea una función que responda con el nombre de la persona encargada del servicio sabiendo el día. Si el día no existe deberá decir que no hay servicio. Los nombres de los días deben ir en minúsculas.
 // Si le pido servicio('Lunes') me debería decir "Este día se encarga María" y si le pido servico(Miércoles") me daría Antonia.
 
+function servicio(params) {
+    
+}
 
 // 1-0

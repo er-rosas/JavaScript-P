@@ -233,8 +233,50 @@ console.log(listar08(["rojo", "verde", "azul"]))
 // Crea una función que responda con el nombre de la persona encargada del servicio sabiendo el día. Si el día no existe deberá decir que no hay servicio. Los nombres de los días deben ir en minúsculas.
 // Si le pido servicio('Lunes') me debería decir "Este día se encarga María" y si le pido servico(Miércoles") me daría Antonia.
 
-function servicio(params) {
-    
+function servicio09(dia09) {
+    let array09 = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes']
+    switch (true) {
+        case dia09 == 'Lunes':
+            return "Este día se encarga María"
+            break;
+        case dia09 == 'Martes':
+            return "Este día se encarga María"
+            break;
+        case dia09 == 'Miércoles':
+            return "Este día se encarga María"
+            break;
+        case dia09 == 'Jueves':
+            return "Este día se encarga María"
+            break;
+        case dia09 == 'Viernes':
+            return "Este día se encarga María"
+            break;
+        default:
+            return "Ingrese un dia valiso"
+            break;
+    }
 }
+
+
+function servicio(dia){
+    let servicios = [ 
+    ['lunes', 'Maria'],
+    ['martes', 'Luis'],
+    ['miércoles', 'Antonia'],
+    ['jueves', 'Pedro'],
+    ['viernes', 'Marisa']
+    ]
+    let ind, persona = "No hay servcicio";
+    for(ind = 0; ind  < servicios.length; ind++) {
+        if (servicios[ind][0] == dia){
+            persona = servicios[ind][1];
+            break;
+            }
+        }
+    return persona;
+    }
+    
+    let diaSemana = prompt("Teclear dia de semana ");
+    alert("Este día se encarga "+ servicio(diaSemana.toLocaleLowerCase()));
 
 // 1-0

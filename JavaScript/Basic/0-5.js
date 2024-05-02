@@ -280,3 +280,28 @@ function servicio(dia){
     alert("Este día se encarga "+ servicio(diaSemana.toLocaleLowerCase()));
 
 // 1-0
+
+// Un tienda vende monitores, teclados y ratones. Los precios se almacenan en una estructura array conde cada elemento es un par producto - precio.
+
+// Diseña una función que reciba como argumento el nombre de un producto (minúscula) y devuelva su precio.
+
+// Si la lsita de precios es monitor: 200€, teclado: 20€ ratón: 10€, al pedri precio('monitor') me devolcerá 200.
+
+function precio10(elemento10) {
+    let elementos = [
+        ["monitor", 200],
+        ["teclado", 20],
+        ["raton", 10]
+    ]
+    let servicio = "No se encontro el producto"
+    for (let ind = 0; ind < elementos.length; ind++) {
+        if (elementos[ind][0] == elemento10) {
+            servicio = elementos[ind][1];
+            break;
+        }
+    }
+    return servicio
+}
+
+let elemento10 = prompt("Telear producto para saber precio Monitor - Teclado - Raton").toLocaleLowerCase();
+console.log(`El precio del ${elemento10} es $${precio10(elemento10)}`);

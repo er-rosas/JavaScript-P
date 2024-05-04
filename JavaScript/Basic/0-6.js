@@ -15,7 +15,45 @@ function media(infoAlumno01) {
 }
 
 console.log(`La nota media de ${infoAlumno01.Nombre} es ${media(infoAlumno01)}`);
+
 // 0-2
+
+// Define un objeto, mediante una expresión, que tenga dos propiedades: precio y descuento y un método neto. El método calculará el precio con el descuento aplicado. Los valores se pedirán por teclado
+// Por ejemplo objeto vestido, precio 400 y descuento 10. El método devolverá como resultado 360 (400 - 10*400/100).
+
+// const {
+//     precio,
+//     descuento,
+//     calcularDesc
+// } = objeto02
+
+// //const calcularDesc = (precio, descuento) => precio * 100 / descuento;
+// function calcularDesc(precio, descuento) {
+//     return precio * 100 / descuento;
+// }
+
+const objeto02 = {
+    precio: 400,
+    descuento: 10,
+    neto: () => {
+        return objeto02.precio * (100 - objeto02.descuento) / 100;
+    }
+}
+
+console.log(`El precio neto es $${objeto02.neto()}`);
+
+
+var vestido, dato;
+vestido = {
+    precio: 0,
+    descuento: 0,
+    neto: function(){ 
+            return this.precio*(1 - this.descuento/100)
+    }
+}
+vestido.precio = parseInt(prompt("Precio bruto "));
+vestido.descuento = parseInt(prompt("Precio bruto "));
+console.log("El precio neto es "+vestido.neto()+"€");
 // 0-3
 // 0-4
 // 0-5

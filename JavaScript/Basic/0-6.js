@@ -60,9 +60,39 @@ console.log("El precio neto es "+vestido.neto()+"€");
 // En esta propuesta debes crear una clase de nombre piedra (con class o con function) con dos propiedades: masa, volumen y un método densidad que calcule este valor (masa/volumen). Luego instancia al menos un objeto de esta clase, dale un valor a su masa y a su volumen y ejecuta el método densidad.
 // Por ejemplo objeto oro, masa de la muestra 194 gr y volumen 10 cc. Densidad deberá devolver 19,4.
 
+// Definición de la clase Piedra
 class piedra {
-    
+    // Constructor para inicializar masa y volumen
+    constructor(masa, volumen){
+        this.masa = masa;
+        this.volumen = volumen
+    }
+
+    // Método para calcular la densidad
+    densidad(){
+        return this.masa / this.volumen
+    }
 }
+
+// Creación de una instancia de la clase Piedra
+let muestraOro = new piedra(194, 10);
+
+// Asignación de valores de masa y volumen
+// muestraOro.masa = 194; // Masa de la muestra en gramos
+// muestraOro.volumen = 10; // Volumen de la muestra en centímetros cúbicos
+
+// Llamada al método densidad y visualización del resultado
+console.log("La densidad de la muestra de oro es:", muestraOro.densidad(), "g/cm³");
+
+class piedra {
+    constructor(m,v){
+       this.masa = m;
+       this.volumen = v;
+    }
+   densidad = function(){return this.masa/this.volumen}
+}
+var oro = new piedra(194,10);
+console.log("densidad "+oro.densidad());
 // 0-4
 // 0-5
 // 0-6

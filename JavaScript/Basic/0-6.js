@@ -93,7 +93,65 @@ class piedra {
 }
 var oro = new piedra(194,10);
 console.log("densidad "+oro.densidad());
+
 // 0-4
+
+// Construye una clase usando function para implementar una cuenta de efectivo. Poseerá dos propiedades: nombre del titular y saldo. Además debe tener dos métodos: ingresar() y retirar(). El primero incrementa el saldo en la cantidad indicada en el argumento y el segundo lo reduce. No se puede sacar más de lo que exista en el saldo. .
+// A los métodos los invocaremos con las llamadas ingresar(1000) o retirar(100) Tras ingresar el saldo será 1000 y trs retirar el saldo será 900..
+
+function CuentaEfectivo(titular, saldoInicial) {
+    this.titular = titular;
+    this.saldo = saldoInicial;
+    
+    this.ingresar = function(cantidad) {
+    if (cantidad > 0) {
+        this.saldo += cantidad;
+        console.log(`Se ingresaron ${cantidad} unidades. Saldo actual: ${this.saldo}`);
+    } else {
+        console.log("La cantidad a ingresar debe ser mayor que cero.");
+    }
+    };
+    
+    this.retirar = function(cantidad) {
+    if (cantidad > 0) {
+        if (cantidad <= this.saldo) {
+        this.saldo -= cantidad;
+        console.log(`Se retiraron ${cantidad} unidades. Saldo actual: ${this.saldo}`);
+        } else {
+        console.log("No se puede retirar más de lo que hay en el saldo.");
+        }
+    } else {
+        console.log("La cantidad a retirar debe ser mayor que cero.");
+    }
+    };
+}
+
+// Ejemplo de uso:
+const miCuenta = new CuentaEfectivo("Juan", 1000);
+miCuenta.ingresar(100);
+miCuenta.retirar(200);
+
+
+
+//Otra forma
+cuenta004 = function(nombre, saldo){
+    this.titular = nombre;
+    this.saldo = saldo;
+    this.ingresar= function(cantidad){
+        this.saldo += cantidad
+    }
+    this.retirar = function(cantidad){
+        if(cantidad <= this.saldo){
+            this.saldo -= cantidad
+        }
+    }
+}
+var micuenta004 = new cuenta004('Juan', 0);
+micuenta004.ingresar(1000);
+console.log("El saldo actual es "+micuenta004.saldo);
+micuenta004.retirar(100);
+console.log("El saldo actual es "+micuenta004.saldo);
+
 // 0-5
 // 0-6
 // 0-7

@@ -172,6 +172,19 @@ console.log("El saldo actual es "+micuenta004.saldo);
 
 // En la solución se usa el camino má primitivo posible: arrays y bucles básicos
 
+class ficha05{
+    constructor(nombre, sesiones, numsesiones){
+        this.nombre = nombre;
+        this.sesiones = sesiones;
+        this.numsesiones = [numsesiones];
+    }
+    anotar(kilometros){
+        return this.numsesiones = kilometros
+    }
+    media(){
+        return this.numsesiones
+    }
+}
 
 // 0-6
 // 0-7

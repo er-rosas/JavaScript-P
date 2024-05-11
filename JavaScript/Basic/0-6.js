@@ -179,13 +179,79 @@ class ficha05{
         this.numsesiones = [numsesiones];
     }
     anotar(kilometros){
-        return this.numsesiones = kilometros
+        return this.numsesiones += kilometros
     }
     media(){
+        this.numsesiones.forEach(element => {
+            element
+        });
         return this.numsesiones
     }
 }
 
+class Ficha {
+    constructor(nombre) {
+    this.nombre = nombre;
+    this.sesiones = [];
+    this.numsesiones = 0;
+    }
+
+    anotar(kilometros) {
+    this.sesiones.push(kilometros);
+    this.numsesiones++;
+    }
+
+    media() {
+    if (this.numsesiones === 0) {
+        return 0;
+    }
+
+    let totalKilometros = 0;
+    for (let i = 0; i < this.numsesiones; i++) {
+        totalKilometros += this.sesiones[i];
+    }
+
+    return totalKilometros / this.numsesiones;
+    }
+}
+
+// Ejemplo de uso
+const persona = new Ficha("Juan");
+
+persona.anotar(8);
+persona.anotar(10);
+persona.anotar(6);
+
+console.log(persona.media()); // Output: 8
+
+
+
+//otro
+
+class Ficha{
+    constructor(n){
+        this.nombre = n;
+        this.sesiones = [];
+        this.numsesiones = 0
+    }
+    anotar= function(km){
+            this.sesiones[this.numsesiones] = km;
+            this.numsesiones++;
+        }
+    media = function(){
+            var media = 0;
+        
+for(let i=0; i< this.sesiones.length;i++){
+                media += this.sesiones[i];
+            }
+        return media/this.numsesiones
+    }
+}
+var fichaJuan = new Ficha('Juan');
+fichaJuan.anotar(10);
+fichaJuan.anotar(8);
+fichaJuan.anotar(6);
+console.log("Media de kilómetros "+fichaJuan.media());
 // 0-6
 // 0-7
 // 0-8

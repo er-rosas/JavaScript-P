@@ -278,13 +278,50 @@ console.log("Media de kilómetros "+fichaJuan.media());
 
 // Si se pide subir(25) , el atributo pasajeros valdrá 25.
 
-// Si a continuación se pide subir(35) solo subirán 15, (2 + 15 son los 40 de máximo)
+// Si a continuación se pide subir(35) solo subirán 15, (25 + 15 son los 40 de máximo)
 
 // Si pedimos bajar 45, el autobús se queda vacío.
 
 // Si teniendo 35 pasajeros se pide que bajen 40 el autobús se queda vacío.
 
+class bus06 {
+    constructor(conductor, cap){
+        this.conductor = conductor;
+        this.capacidad = cap;
+        this.pasajeros = 0;
+    };
 
+    subir(num){
+        if (this.pasajeros + num < this.capacidad) {
+            this.pasajeros += num;
+        } else {
+            this.pasajeros = this.capacidad;
+        }
+    }
+    bajar(num){
+        if (num <= this.capacidad) {
+            this.pasajeros -= num;
+        } else {
+            this.pasajeros = 0;
+        }
+    }
+}
+class conductor{
+    constructor(nomb, lice){
+        this.nombre = nomb;
+        this.licencia = lice;
+    }
+}
+
+var cond1 = new conductor("Juan", 1234);
+var linea1 = new bus06(cond1, 40);
+console.log("conductor es "+linea1.conductor.nombre);
+linea1.subir(30);
+console.log("Pasajeros al subir 30:  " + linea1.pasajeros);
+linea1.subir(20);
+console.log("Pasajeros al subir 20:  "+linea1.pasajeros);
+linea1.bajar(30);
+console.log("Pasajeros al bajar 30:  "+linea1.pasajeros);
 // 0-7
 // 0-8
 // 0-9
